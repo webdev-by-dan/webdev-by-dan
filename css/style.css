@@ -43,7 +43,8 @@ body {
   letter-spacing: 0;
   word-wrap: break-word;
   font-weight: 400;
-  background-color: var(--body-color);
+  background-image: url("../img/fall-pattern.jpg");
+  background-repeat: repeat-y;
   color: var(--main-color);
 }
 
@@ -295,8 +296,10 @@ h6 { font-size: 16px; }
   position: fixed;
   top: 0;
   left: 0;
-  border-right: 1px solid rgba(223,86,70,.1);
+  border-right: 1px solid black;
   font-size: 22px !important;
+  background: white !important;
+  z-index: 999;
 }
 .mers_tm_leftpart .leftpart_inner {
   width: 100%;
@@ -399,7 +402,7 @@ h6 { font-size: 16px; }
   position: relative;
   border-bottom: 1px solid rgba(32, 32, 32, .07);
   padding-bottom: 12px;
-  background-color: var(--floral-white);
+  background-color: transparent;
 }
 .mers_tm_subscribe input:focus {
   outline: none;
@@ -481,6 +484,7 @@ h6 { font-size: 16px; }
   clear: both;
   float: left;
   padding-left: 300px;
+  z-index: 999;
 }
 .mers_tm_rightpart .rightpart_inner {
   width: 100%;
@@ -622,6 +626,12 @@ h6 { font-size: 16px; }
   margin-bottom: 90px;
   padding-top: 100px;
   font-size: 20px !important;
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+  z-index: 4;
+  position: relative;
+  background-color: var(--floral-white);
 }
 .mers_tm_about .about_inner {
   width: 100%;
@@ -826,8 +836,14 @@ h6 { font-size: 16px; }
   height: auto;
   clear: both;
   float: left;
+  margin-bottom: 90px;
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+  z-index: 4;
   background-color: var(--off-color);
-  padding: 111px 0 90px 0;
+  padding: 112px 0 90px 0;
+  position: relative;
 }
 .work-services {
 	color: var(--floral-white);
@@ -1152,7 +1168,15 @@ h6 { font-size: 16px; }
   clear: both;
   float: left;
   margin-bottom: 90px;
-  padding-top: 111px;
+  padding: 54px 0px;
+  margin-bottom: 90px;
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+  z-index: 4;
+  background-color: var(--floral-white);
+  position: relative;
+
 }
 .mers_tm_portfolio .portfolio_list {
   width: 100%;
@@ -1388,6 +1412,12 @@ h6 { font-size: 16px; }
   color: var(--floral-white) !important;
   padding: 170px 0 35px 0;
   font-size: 18px !important;
+  margin-bottom: 90px;
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+  z-index: 4;
+  position: relative;
 }
 .mers_tm_skills .skills_inner {
   width: 100%;
@@ -1582,7 +1612,14 @@ h6 { font-size: 16px; }
   height: auto;
   clear: both;
   float: left;
-  padding-top: 111px;
+  padding: 100px 0px 40px 0px;
+  margin-bottom: 90px;
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+  z-index: 4;
+  background-color: var(--floral-white);
+  position: relative;
 }
 .mers_tm_pricing .price_list {
   width: 100%;
@@ -1711,8 +1748,13 @@ h6 { font-size: 16px; }
   margin-bottom: 100px;
   z-index: 2;
   background-color: var(--eerie-black);
-  color: var(-
-  -floral-white);
+  color: var(--floral-white);
+  margin-bottom: 90px;
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+  z-index: 4;
+  position: relative;
 }
 
 .mers_tm_testimonials .testimonials_inner {
@@ -1722,18 +1764,18 @@ h6 { font-size: 16px; }
   float: left;
   display: flex;
   align-items: center;
-  padding-top: 30px;
+  padding: 30px 0px;
   position: relative;
 }
 .mers_tm_testimonials .avatar {
-  width: 30%;
+  width: 40%;
 }
 .mers_tm_testimonials .avatar img {
   min-width: 100%;
   max-height: 400px;
 }
 .mers_tm_testimonials .testimonials_list {
-  width: 70%;
+  width: 60%;
   height: auto;
   clear: both;
   padding: 0 150px 0 65px;
@@ -1902,7 +1944,14 @@ h6 { font-size: 16px; }
   clear: both;
   float: left;
   background-color: var(--floral-white);
-  padding: 40px 0 115px 0;
+  padding: 50px 0 50px 0;
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+  z-index: 4;
+  position: relative;
+  margin-bottom: 90px;
+  background-color: var(--floral-white);
 }
 .mers_tm_news .news_list {
   width: 100%;
@@ -2154,6 +2203,11 @@ h6 { font-size: 16px; }
   float: left;
   background-color: var(--off-color);
   padding: 120px 0 105px 0;
+  -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+  z-index: 4;
+  position: relative;
 }
 .mers_tm_contact .contact_inner {
   width: 100%;
@@ -2275,7 +2329,6 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
-
 .mers_tm_contact ::-webkit-input-placeholder {
   color: var(--secondary-color);
 }
@@ -2737,4 +2790,26 @@ margin: 20px 10px;
   border: 1px solid var(--black-olive);
   border-radius: 10px;
   padding: 10px;
+}
+
+.layer {
+  background-image: url(../img/fall-pattern.jpg);
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.testimonials {
+  background-color: var(--floral-white);
+  border: 1px solid var(--floral-white);
+  border-radius: 10px;
+}
+
+.border {
+  padding: 15px;
+  border: 4px solid var(--floral-white);
+  border-radius: 5px;
+}
+
+.left-align {
+  text-align: left !important;
 }

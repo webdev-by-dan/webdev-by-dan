@@ -131,7 +131,7 @@ h6 { font-size: 16px; }
   width: 50%;
   height: 100%;
   z-index: -1;
-  background-color: #000;
+  background-color: var(--eerie-black);
   transition: all 0.3s ease 0s;
 }
 #preloader:after {
@@ -296,7 +296,7 @@ h6 { font-size: 16px; }
   position: fixed;
   top: 0;
   left: 0;
-  border-right: 1px solid black;
+  border-right: 2px solid black;
   font-size: 22px !important;
   background: white !important;
   z-index: 999;
@@ -498,6 +498,7 @@ h6 { font-size: 16px; }
   float: left;
   position: relative;
   overflow: hidden;
+  z-index: 9;
 }
 .mers_tm_hero .background {
   position: absolute;
@@ -505,6 +506,7 @@ h6 { font-size: 16px; }
   bottom: 0;
   left: 0;
   right: 0;
+  background-color: rgba(0,0,0,.7);
 }
 .mers_tm_hero .background .image {
   position: absolute;
@@ -515,6 +517,9 @@ h6 { font-size: 16px; }
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  -webkit-box-shadow: inset 0px -10px 20px -2px rgba(0,0,0,0.35);
+  -moz-box-shadow: inset 0px -10px 20px -2px rgba(0,0,0,0.35);
+  box-shadow: inset 0px -10px 20px -2px rgba(0,0,0,0.35);
 }
 .mers_tm_hero .background .overlay {
   position: absolute;
@@ -522,7 +527,6 @@ h6 { font-size: 16px; }
   bottom: 0;
   left: 0;
   right: 0;
-  /* background-color: rgba(0,0,0,.3); */
   z-index: 1;
 }
 .mers_tm_hero .container {
@@ -541,7 +545,7 @@ h6 { font-size: 16px; }
 }
 .mers_tm_hero .hello {
   display: inline-block;
-  color: var(--extra-color);
+  color: var(--floral-white);
   font-size: 32px;
 }
 .mers_tm_hero .name {
@@ -549,10 +553,13 @@ h6 { font-size: 16px; }
   font-weight: 700;
   line-height: 1;
   margin-bottom: 25px;
+  color: var(--floral-white);
+
 }
 .mers_tm_hero .text {
   font-size: 32px;
   margin-bottom: 57px;
+  color: var(--floral-white);
 }
 .mers_tm_button {
   width: 100%;
@@ -624,7 +631,7 @@ h6 { font-size: 16px; }
   clear: both;
   float: left;
   margin-bottom: 90px;
-  padding-top: 100px;
+  padding: 70px 0px 35px 0px;
   font-size: 20px !important;
   -webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
@@ -693,7 +700,7 @@ h6 { font-size: 16px; }
   float: left;
 }
 .mers_tm_about .list ul {
-  margin: 0 0 0 -30px;
+  margin: 0 0 0 -20px;
   list-style-type: none;
 }
 .mers_tm_about .list ul li {
@@ -2794,6 +2801,7 @@ margin: 20px 10px;
 
 .layer {
   background-image: url(../img/fall-pattern.jpg);
+  object-fit: cover;
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
 }
